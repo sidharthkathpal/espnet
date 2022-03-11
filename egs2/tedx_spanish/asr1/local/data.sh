@@ -50,16 +50,13 @@ fi
 if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
     log "stage2: Preparing data for TEDX_SPANISH"
     ### Task dependent. You have to make data the following preparation part by yourself.
-    for part in "validated" "test" "dev"; do
+    python local/data_transcript.py "${TEDX_SPANISH}"
+    
+    for part in "train" "test" "dev"; do
         # use underscore-separated names in data directories.
-        local/data_prep.pl "${TEDX_SPANISH}/cv-corpus-5.1-2020-06-22/${lang}" ${part} data/"$(echo "${part}_${lang}" | tr - _)"
+        local/data_prep.pl "${TEDX_SPANISH}/tedx_spanish_corpus" ${part} data/"$(echo "${part}_${lang}" | tr - _)"
     done
 
-    # remove test&dev data from validated sentences
-    utils/copy_data_dir.sh data/"$(echo "validated_${lang}" | tr - _)" data/${train_set}
-    utils/filter_scp.pl --exclude data/${train_dev}/wav.scp data/${train_set}/wav.scp > data/${train_set}/temp_wav.scp
-    utils/filter_scp.pl --exclude data/${test_set}/wav.scp data/${train_set}/temp_wav.scp > data/${train_set}/wav.scp
-    utils/fix_data_dir.sh data/${train_set}
 fi
 
 log "Successfully finished. [elapsed=${SECONDS}s]"
