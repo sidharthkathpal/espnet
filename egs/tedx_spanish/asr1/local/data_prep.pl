@@ -40,7 +40,7 @@ while(<CSV>) {
     $gender = "m";
   }
   $uttId = $filepath;
-  if (-z "$db_base/clips/$filepath") {
+  if (-z "$db_base/speech/$filepath") {
     print "null file $filepath\n";
     next;
   }
@@ -54,7 +54,7 @@ while(<CSV>) {
   }
   print TEXT "$uttId"," ","$text","\n";
   print GNDR "$uttId"," ","$gender","\n";
-  print WAV "$uttId"," ffmpeg -i $db_base/clips/$filepath -f wav -ar 16000 -ab 16 -ac 1 - |\n";
+  print WAV "$uttId"," ffmpeg -i $db_base/speech/$filepath -f wav -ar 16000 -ab 16 -ac 1 - |\n";
   print SPKR "$uttId"," $spkr","\n";
 }
 close(SPKR) || die;
