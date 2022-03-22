@@ -14,3 +14,5 @@
 - Code for replicating the results:
   - IPYNB file location - [NLP_Assignment3](https://github.com/sidharthkathpal/espnet/blob/master/egs2/tedx_spanish/asr1/NLP_Assignment3.ipynb)
   - We also include the jupyter notebook needed to run the results we have just shared in the above .md files
+  - We used the fused frontends "YAML" for the Self Supervised approach which includes both the HUBERT and Wav2Vec models
+  - For the baseline recipe we use the commonvoice recipe used by the base notebook
