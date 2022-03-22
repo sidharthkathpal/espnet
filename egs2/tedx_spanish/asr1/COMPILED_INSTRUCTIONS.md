@@ -11,4 +11,6 @@
 - Data Preparation Phase:
   - For splitting the data we created the data_transcript.py file which splits our data into train/dev/test
   - We updated the data.sh file to incoporate these splits work on that basis
+- Code for replicating the results:
+  - IPYNB file location - 
   - We also include the jupyter notebook needed to run the results we have just shared in the above .md files
