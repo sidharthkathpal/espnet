@@ -13,20 +13,20 @@
 
 |dataset|Snt|Wrd|Corr|Sub|Del|Ins|Err|S.Err|
 |---|---|---|---|---|---|---|---|---|
-|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/dev_es|281|6116|0.0|0.0|100.0|0.0|100.0|100.0|
-|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/test_es|281|6123|0.0|0.0|100.0|0.0|100.0|100.0|
+|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/dev_es|338|7300|70.4|22.7|6.8|4.3|33.8|97.6|
+|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/test_es|337|7239|71.2|21.6|7.2|3.8|32.6|97.9|
 
 ### CER
 
 |dataset|Snt|Wrd|Corr|Sub|Del|Ins|Err|S.Err|
 |---|---|---|---|---|---|---|---|---|
-|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/dev_es|281|33214|0.0|0.0|100.0|0.0|100.0|100.0|
-|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/test_es|281|33310|0.0|0.0|100.0|0.0|100.0|100.0|
+|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/dev_es|338|39791|88.6|4.8|6.7|3.7|15.1|97.6|
+|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/test_es|337|39514|88.9|4.4|6.7|3.5|14.6|97.9|
 
 ### TER
 
 |dataset|Snt|Wrd|Corr|Sub|Del|Ins|Err|S.Err|
 |---|---|---|---|---|---|---|---|---|
-|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/dev_es|281|17220|0.0|0.0|100.0|0.0|100.0|100.0|
-|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/test_es|281|17416|0.0|0.0|100.0|0.0|100.0|100.0|
+|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/dev_es|338|20708|81.8|12.3|5.9|5.5|23.7|97.6|
+|inference_lm_lm_train_es_bpe150_valid.loss.ave_asr_model_valid.acc.ave/test_es|337|20649|82.7|11.6|5.7|5.1|22.4|97.9|
 
